@@ -1,13 +1,50 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/middlePurple"
     tools:context="com.example.profile.MainProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:elevation="14dp"
+        android:backgroundTint="@color/middlePurple"
+        android:id="@+id/avatar"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bussinesman" />
+
     <TextView
+        android:elevation="6dp"
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/avatar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:paddingBottom="6dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="6dp"
+        android:text="User Name"
+        android:textColor="@color/primaryText"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:elevation="6dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/rounded"/>
 
-</FrameLayout>
+
+</RelativeLayout>
